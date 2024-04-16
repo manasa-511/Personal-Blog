@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height:100vh;
+    display: grid;
+    place-items:center;
+    background: #100721;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    background: linear-gradient( #100721,#100721, #fff , #fff);
+      
+}
+
+
+
+.heading{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 254, 253);
+    border: black;
+  margin:2%;
+}
+
+
+nav{
+    margin-left: 60%;
+    word-spacing:10px;
+   
+}
+ a{
+    position: relative;
+    font-size:18px;
+    font-weight: 700;
+    color: #ffbebe;
+    text-decoration: none;
+    padding: 0 20px;
+    font-family:'Times New Roman', Times, serif
+    
+    }
+ a:after{
+    content: " ";
+    position: absolute;
+    left:0;
+   bottom:-20%;
+    background-color:rgb(210, 90, 88);
+    width:0;
+    height:3px;
+}
+a:hover{
+    color:#ffff;
+}
+a:hover:after{
+    width:100%;
+    transition: 0.4s;
+}
+
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    height:500px;
+    gap:10px;
+
+
+}
+
+.container > div{
+    flex:0 0 120px;
+    border-radius: 0.5rem;
+    transition:0.5s ease-in-out;
+    cursor:pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+}
+
+.container > div:nth-of-type(1)
+{
+    background:url(https://www.hindustantimes.com/ht-img/img/2023/08/29/1600x900/pexels_1693295846485_1693295853881.jpg) no-repeat 50%/cover;
+}
+
+
+.container > div:nth-of-type(2)
+{
+    background:url(https://e0.pxfuel.com/wallpapers/330/236/desktop-wallpaper-sema-haviv-on-dance-graphy-in-2021-dance-graphy-poses-dancer-graphy-da-in-2021-dance-graphy-poses-dancer-graphy-dance-graphy-contemporary-dance.jpg) no-repeat 50%/cover;
+}
+
+.container > div:nth-of-type(3)
+{
+    background:url(https://t4.ftcdn.net/jpg/03/32/75/39/360_F_332753934_tBacXEgxnVplFBRyKbCif49jh0Wz89ns.jpg) no-repeat 50%/cover;
+}
+
+.container > div .content
+{
+    font-size: 1rem;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    background: #02022e;
+    background:linear-gradient(0deg,rgba(2,2,46,0.6755077031) 0%,rgba(255,255,255,0) 100%);
+    transform:translatey(100%);
+    transition: opacity 0.5s ease-in-out,transform 0.5s 0.2s;
+    visibility:hidden;
+
+}
+
+.container >div .content span{
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+
+
+}
+
+
+.container > div:hover{
+    flex: 0 0 250px;
+    box-shadow: 1px 3px 15px #7645d8;
+    transform:translatey(-30px);
+
+}
+
+.container > div:hover .content{
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+.name
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: #ffff;
+    
+}
+
+
+
+.info p{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.info img{
+    width: 5%;
+    border-radius: 50%;
+    margin-top: 4%;
+}
+.info h5{
+    color: rgb(5, 7, 9);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+
+.effect h4{
+    color: #181515;
+    font-size: 30px;
+    margin-top:40px;
+}
+
+
+
