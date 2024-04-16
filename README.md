@@ -1,3 +1,2 @@
 # Personal-Blog
-These files contains html css codes.
-This website features my interests,educational background,travel blog.
+These files include HTML and CSS code. The website showcases my interests, educational history, and travel blog.
